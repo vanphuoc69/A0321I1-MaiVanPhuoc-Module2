@@ -50,10 +50,10 @@ public class mergeArray {
         //mang 3
         int[] array3=new int[array1.length+array2.length];
         for(int k=0;k<array3.length;k++){
-            if(k<size1){
-                array3[j]=array1[j];
+            if(k<array1.length){
+                array3[k]=array1[k];
             }else {
-                array3[j]=array2[j-size1];
+                array3[k]=array2[k-size1];
             }
         }
         System.out.print("mảng sau khi gộp: ");

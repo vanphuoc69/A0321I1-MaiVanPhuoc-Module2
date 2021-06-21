@@ -26,17 +26,16 @@ public class sumDiagonal {
         }
         int cheo1=0;
         for (int i = 0; i < row; i++) {
-            for (int j = 0; j < col; j++) {
-                if(i==j)
-                    cheo1+=array[i][j];
-            }
+                if(i==i)
+                    cheo1+=array[i][i];
+
         }
         System.out.println("tổng đường chéo chính thứ 1 là " +cheo1);
 
         int cheo2=0;
         for (int i = 0;i <row; i++) {
-            for (int j = col; j >0 ; j--) {
-                if(i==j)
+            for (int j = 0; j <col ; j++) {
+                if(array.length-1-i==j)
                     cheo2+=array[i][j];
             }
         }

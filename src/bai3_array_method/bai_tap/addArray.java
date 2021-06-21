@@ -35,10 +35,10 @@ public class addArray {
             System.out.println("không thêm được!");
         }else {
             for(int j=0;j<index;j++){
-                arrayNew[j+1]=array[j];
+                arrayNew[j]=array[j];
             }
             arrayNew[index]=value;
-            for(int j=index;j<array.length-1;j++){
+            for(int j=index;j<arrayNew.length-1;j++){
                 arrayNew[j+1]=array[j];
             }
             System.out.print("mảng sau khi thêm phần tử: ");

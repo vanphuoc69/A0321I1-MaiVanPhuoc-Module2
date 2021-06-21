@@ -26,6 +26,7 @@ public class delArray {
         for (int j = 0; j < array.length; j++) {
             System.out.print(array[j] + "\t");
         }
+
         System.out.println("nhập giá trị cần xóa");
         int value;
         value=scanner.nextInt();
@@ -41,6 +42,7 @@ public class delArray {
         if(check){
             for (int k=index_del;k<array.length-1;k++){
                 array[k]=array[k+1];
+                array[k+1]=0;
             }
             System.out.print("mảng sau khi xóa: ");
             for (int j = 0; j < array.length; j++) {
