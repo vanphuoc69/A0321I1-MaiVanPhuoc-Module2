@@ -1,6 +1,4 @@
-package Bai2_Loop.BaiTap;
-
-import java.util.Scanner;
+package bai2_loop.bai_tap;
 
 public class Prime100 {
     public static void main(String[] args) {

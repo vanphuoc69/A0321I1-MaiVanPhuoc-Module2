@@ -1,4 +1,4 @@
-package Bai2_Loop.BaiTap;
+package bai2_loop.bai_tap;
 
 import java.util.Scanner;
 
