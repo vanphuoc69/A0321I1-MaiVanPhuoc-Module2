@@ -2,7 +2,7 @@ package bai3_array_method.bai_tap;
 
 import java.util.Scanner;
 
-public class mergeArray {
+public class MergeArray {
     public static void main(String[] args) {
         int size1;
         int[] array1;

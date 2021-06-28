@@ -2,7 +2,7 @@ package bai3_array_method.bai_tap;
 
 import java.util.Scanner;
 
-public class findMaxArray2d {
+public class FindMaxArray2d {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Nhập vào số dòng của mảng: ");

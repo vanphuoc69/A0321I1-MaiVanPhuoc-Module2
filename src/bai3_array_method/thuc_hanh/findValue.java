@@ -2,7 +2,7 @@ package bai3_array_method.thuc_hanh;
 
 import java.util.Scanner;
 
-public class findValue {
+public class FindValue {
     public static void main(String[] args) {
         String[] students = {"Christian", "Michael", "Camila", "Sienna", "Tanya", "Connor", "Zachariah", "Mallory", "Zoe", "Emily"};
         Scanner scanner=new Scanner(System.in);

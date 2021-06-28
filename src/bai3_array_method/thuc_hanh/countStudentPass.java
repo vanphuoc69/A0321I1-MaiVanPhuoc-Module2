@@ -2,7 +2,7 @@ package bai3_array_method.thuc_hanh;
 
 import java.util.Scanner;
 
-public class countStudentPass {
+public class CountStudentPass {
     public static void main(String[] args) {
         int size;
         int[] array;

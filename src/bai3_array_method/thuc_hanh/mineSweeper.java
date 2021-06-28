@@ -1,6 +1,6 @@
 package bai3_array_method.thuc_hanh;
 
-public class mineSweeper {
+public class MineSweeper {
     public static void main(String[] args) {
         String[][] map = {
                 {"*", ".", "*", ".", "."},

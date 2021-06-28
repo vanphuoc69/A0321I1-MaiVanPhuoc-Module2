@@ -2,7 +2,7 @@ package bai3_array_method.thuc_hanh;
 
 import java.util.Scanner;
 
-public class findMax {
+public class FindMax {
     public static void main(String[] args) {
         //nhap va kiem tra kich thuoc mang
         int size;

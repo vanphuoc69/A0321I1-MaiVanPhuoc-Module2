@@ -2,7 +2,7 @@ package bai3_array_method.bai_tap;
 
 import java.util.Scanner;
 
-public class findMin {
+public class FindMin {
     public static void main(String[] args) {
         //nhap va kiem tra kich thuoc mang
         int size;

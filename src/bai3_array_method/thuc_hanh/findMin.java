@@ -1,6 +1,6 @@
 package bai3_array_method.thuc_hanh;
 
-public class findMin {
+public class FindMin {
     public static void main(String[] args) {
         int[] arr = {4, 12, 7, 8, 1, 6, 9};
         int index = minValue(arr);

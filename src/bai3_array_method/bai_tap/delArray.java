@@ -2,7 +2,7 @@ package bai3_array_method.bai_tap;
 
 import java.util.Scanner;
 
-public class delArray {
+public class DelArray {
     public static void main(String[] args) {
         int size;
         int[] array;

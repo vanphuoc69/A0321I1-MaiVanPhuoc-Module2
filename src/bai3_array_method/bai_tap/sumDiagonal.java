@@ -2,7 +2,7 @@ package bai3_array_method.bai_tap;
 
 import java.util.Scanner;
 
-public class sumDiagonal {
+public class SumDiagonal {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("ma trận vuông có số cột và số dòng bằng nhau");
