@@ -1,4 +1,4 @@
-package bai5_access_static;
+package bai5_access_static.bai_tap;
 
 public class Circle {
     private double radius=1.0;
