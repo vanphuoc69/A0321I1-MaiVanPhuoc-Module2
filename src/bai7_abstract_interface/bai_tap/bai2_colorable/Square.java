@@ -32,6 +32,11 @@ public class Square extends Rectangle implements Colorable {
     }
 
     @Override
+    public double getArea() {
+        return getSide()*getSide();
+    }
+
+    @Override
     public String toString() {
         return "A Square with side="
                 + getSide()
