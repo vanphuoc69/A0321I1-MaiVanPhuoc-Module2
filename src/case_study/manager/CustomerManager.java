@@ -8,11 +8,8 @@ import java.util.LinkedList;
 import java.util.Scanner;
 
 public class CustomerManager {
-    static LinkedList<Customer> linkedList=new LinkedList<>();
+    LinkedList<Customer> linkedList=new LinkedList<>();
     public void customerMenu(){
-        linkedList.add(0,new Customer("C1","Member","Hà Nội"));
-        linkedList.add(1,new Customer("C2","Silver","Đà Nẵng"));
-        linkedList.add(2,new Customer("C3","Gold","Huế"));
         System.out.println("Customer Management ");
         System.out.println("1. Display list customers");
         System.out.println("2. Add new customers");
@@ -23,13 +20,13 @@ public class CustomerManager {
         int choice = scanner.nextInt();
         switch (choice){
             case 1:
-                CustomerServiceImpl.display(linkedList);
+                CustomerServiceImpl.display();
                 break;
             case 2:
                 CustomerServiceImpl.add(linkedList);
                 break;
             case 3:
-                CustomerServiceImpl.edit(linkedList);
+                CustomerServiceImpl.edit();
                 break;
             case 4:
                 FuramaController controller=new FuramaController();

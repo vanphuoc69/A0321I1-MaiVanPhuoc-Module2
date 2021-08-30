@@ -56,13 +56,30 @@ public class Employee extends Person{
         this.salary = salary;
     }
 
+
     @Override
     public String toString() {
+        return name +
+                "," + date +
+                "," + gender +
+                "," + idCard +
+                "," + email+
+                "," +employeeId +
+                "," + level +
+                "," + position +
+                "," + salary;
+    }
+    public String showInfo() {
         return "Employee{" +
-                "employeeId=" + employeeId +
+                "employeeId='" + employeeId + '\'' +
                 ", level='" + level + '\'' +
                 ", position='" + position + '\'' +
                 ", salary=" + salary +
+                ", name='" + name + '\'' +
+                ", date='" + date + '\'' +
+                ", gender=" + gender +
+                ", idCard=" + idCard +
+                ", email='" + email + '\'' +
                 '}';
     }
 }

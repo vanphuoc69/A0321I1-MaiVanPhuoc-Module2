@@ -1,11 +1,11 @@
 package case_study.models;
 
 public abstract class Facility {
-    private String nameService;
-    private double useArea;
-    private double rentCost;
-    private int maxPeople;
-    private String rentType;
+    protected String nameService;
+    protected double useArea;
+    protected double rentCost;
+    protected int maxPeople;
+    protected String rentType;
 
     public Facility() {
     }
@@ -60,6 +60,14 @@ public abstract class Facility {
 
     @Override
     public String toString() {
+        return nameService +
+                "," + useArea +
+                "," + rentCost +
+                "," + maxPeople +
+                "," + rentType;
+    }
+
+    public String showInfo() {
         return "Facility{" +
                 "nameService='" + nameService + '\'' +
                 ", useArea=" + useArea +

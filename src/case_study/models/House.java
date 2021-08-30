@@ -1,6 +1,6 @@
 package case_study.models;
 
-public class House extends Facility{
+public class House extends Facility implements Comparable<House>{
     private String roomStandard;
     private int numberFloor;
 
@@ -36,9 +36,28 @@ public class House extends Facility{
 
     @Override
     public String toString() {
+        return nameService +
+                "," + useArea +
+                "," + rentCost +
+                "," + maxPeople +
+                "," + rentType +
+                "," + roomStandard +
+                "," + numberFloor ;
+    }
+    public String showInfo() {
         return "House{" +
                 "roomStandard='" + roomStandard + '\'' +
                 ", numberFloor=" + numberFloor +
+                ", nameService='" + nameService + '\'' +
+                ", useArea=" + useArea +
+                ", rentCost=" + rentCost +
+                ", maxPeople=" + maxPeople +
+                ", rentType='" + rentType + '\'' +
                 '}';
+    }
+
+    @Override
+    public int compareTo(House o) {
+        return 0;
     }
 }

@@ -1,6 +1,6 @@
 package case_study.models;
 
-public class Room extends Facility{
+public class Room extends Facility implements Comparable<Room> {
     private String freeService;
 
     public Room() {
@@ -23,10 +23,29 @@ public class Room extends Facility{
         this.freeService = freeService;
     }
 
+
     @Override
     public String toString() {
+        return nameService +
+                "," + useArea +
+                "," + rentCost +
+                "," + maxPeople +
+                "," + rentType +
+                "," + freeService;
+    }
+    public String showInfo() {
         return "Room{" +
                 "freeService='" + freeService + '\'' +
+                ", nameService='" + nameService + '\'' +
+                ", useArea=" + useArea +
+                ", rentCost=" + rentCost +
+                ", maxPeople=" + maxPeople +
+                ", rentType='" + rentType + '\'' +
                 '}';
+    }
+
+    @Override
+    public int compareTo(Room o) {
+        return 0;
     }
 }

@@ -1,11 +1,11 @@
 package case_study.models;
 
 public abstract class Person {
-    private String name;
-    private String date;
-    private boolean gender;
-    private int idCard;
-    private String email;
+    protected String name;
+    protected String date;
+    protected boolean gender;
+    protected int idCard;
+    protected String email;
 
     public Person() {
     }

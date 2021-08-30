@@ -45,12 +45,31 @@ public class Customer extends Person{
         this.customerAddress = customerAddress;
     }
 
+
     @Override
     public String toString() {
+        return  name +
+                "," + date +
+                "," + gender +
+                "," + idCard +
+                "," + email +
+                "," +  customerId +
+                "," + customerType +
+                "," + customerAddress ;
+    }
+
+    public String showInfo() {
         return "Customer{" +
-                "customerId=" + customerId +
+                "customerId='" + customerId + '\'' +
                 ", customerType='" + customerType + '\'' +
                 ", customerAddress='" + customerAddress + '\'' +
+                ", name='" + name + '\'' +
+                ", date='" + date + '\'' +
+                ", gender=" + gender +
+                ", idCard=" + idCard +
+                ", email='" + email + '\'' +
                 '}';
     }
+
+
 }

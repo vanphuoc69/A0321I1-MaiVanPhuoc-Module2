@@ -58,8 +58,8 @@ public class Contract {
         this.customerId = customerId;
     }
 
-    @Override
-    public String toString() {
+
+    public String showInfo() {
         return "Contract{" +
                 "contractNumber=" + contractNumber +
                 ", bookingId='" + bookingId + '\'' +
@@ -67,5 +67,13 @@ public class Contract {
                 ", totalAmount=" + totalAmount +
                 ", customerId='" + customerId + '\'' +
                 '}';
+    }
+    @Override
+    public String toString() {
+        return contractNumber +
+                "," + bookingId +
+                "," + depositAmount +
+                "," + totalAmount +
+                "," + customerId;
     }
 }

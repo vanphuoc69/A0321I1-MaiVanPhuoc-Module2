@@ -1,8 +1,8 @@
 package case_study.models;
 
-import java.util.Comparator;
+import java.util.Date;
 
-public class Booking implements Comparable<Booking> {
+public class Booking  {
     private String bookingId;
     private String startDay;
     private String endDay;
@@ -70,8 +70,18 @@ public class Booking implements Comparable<Booking> {
         this.serviceType = serviceType;
     }
 
+
     @Override
     public String toString() {
+        return bookingId +
+                "," + startDay +
+                "," + endDay +
+                "," + customerId +
+                "," + serviceName +
+                "," + serviceType;
+    }
+
+    public String showInfo() {
         return "Booking{" +
                 "bookingId='" + bookingId + '\'' +
                 ", startDay='" + startDay + '\'' +
@@ -82,8 +92,8 @@ public class Booking implements Comparable<Booking> {
                 '}';
     }
 
-    @Override
-    public int compareTo(Booking o) {
-        return this.getBookingId().compareTo(o.getBookingId());
-    }
+//    @Override
+//    public int compareTo(Booking o) {
+//        return 0;
+//    }
 }
